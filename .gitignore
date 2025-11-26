@@ -1,0 +1,107 @@
+##############################
+# Archivos del entorno
+##############################
+.env
+.env.*
+!.env.example
+
+##############################
+# Logs y reportes
+##############################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+##############################
+# Cache y archivos temporales
+##############################
+tmp/
+temp/
+cache/
+*.cache
+*.tmp
+*.swp
+*.swo
+
+##############################
+# Sistema operativo
+##############################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+##############################
+# IDEs
+##############################
+# VSCode
+.vscode/
+.history/
+
+# PhpStorm / JetBrains
+.idea/
+*.iml
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+##############################
+# NodeJS / Frontend
+##############################
+node_modules/
+npm/
+dist/
+build/
+coverage/
+bower_components/
+
+##############################
+# PHP / Composer
+##############################
+vendor/
+composer.lock
+
+##############################
+# Python
+##############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+##############################
+# Seguridad
+##############################
+/config/services.php        # claves API Jira, Make, SMTP
+/public/uploads/*           # excepto si quieres versiones públicas
+!/public/uploads/.gitkeep
+
+##############################
+# Herramientas
+##############################
+/scripts/*-local.*
+/database/*.bak
+/database/*.sql
+database/migrations/*.lock
+
+##############################
+# Archivos del proyecto
+##############################
+/public/assets/css/*.map
+/public/assets/js/*.map
+/public/assets/img/raw/
+public/assets/uploads/*

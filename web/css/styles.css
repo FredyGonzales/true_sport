@@ -1,0 +1,567 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #111;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 160px;
+    cursor: pointer;
+}
+.logo :hover {
+    width: 180px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('../img/hero.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 2px 10px #000;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* NOSOTROS */
+.nosotros {
+    display: flex;
+    padding: 80px;
+    gap: 40px;
+    align-items: center;
+}
+
+.nosotros-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.nosotros-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.nosotros-img img {
+    width: 480px;
+    border-radius: 10px;
+}
+
+/* SERVICIOS */
+.servicios {
+    padding: 80px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card {
+    padding: 30px;
+    background: #f1f1f1;
+    width: 240px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* CONTACTO */
+.contacto {
+    padding: 80px;
+    text-align: center;
+    background: #000;
+    color: white;
+}
+
+/* DISCIPLINAS */
+.disciplinas {
+    padding: 80px;
+    background: #111;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+/* MISIÓN – VISIÓN – VALORES */
+.mvv-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.mvv-card {
+    background: #fff;
+    padding: 25px;
+    width: 320px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.mvv-card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.mvv-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.mvv-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* DISCIPLINAS LISTADO */
+.sub-title {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 40px;
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+}
+
+.sport-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.1);
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+
+.sport-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.sport-card h4 {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.sport-card:hover {
+    transform: translateY(-5px);
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+}
+
+.navbar .logo img {
+    width: 180px;
+    cursor: pointer;
+}
+
+.navbar .logo img:hover {
+    width: 200px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    padding-bottom: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color .25s ease;
+}
+
+/* Hover color */
+.nav-menu li a:hover {
+    color: #d2e639;
+}
+
+/* Subrayado animado */
+.nav-menu li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #dde639;
+    transition: width .25s ease;
+}
+
+.nav-menu li a:hover::after {
+    width: 100%;
+}
+
+/* Mobile Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        background: #fff;
+        width: 250px;
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+        box-shadow: -3px 0px 12px rgba(0,0,0,0.1);
+        transition: right .3s ease;
+    }
+
+    .nav-menu.show {
+        right: 0;
+    }
+}
+
+/* CONTACTO */
+.contacto-section {
+    padding: 80px;
+    background: #fff;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.contact-card {
+    background: #f9f9f9;
+    padding: 35px;
+    border-radius: 12px;
+    width: 330px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-list,
+.sedes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-list li,
+.sedes-list li {
+    margin-bottom: 12px;
+}
+
+.social-list a,
+.sedes-list a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color .25s ease, transform .25s ease;
+}
+
+.social-list a:hover,
+.sedes-list a:hover {
+    color: #e63946;
+    transform: translateX(6px);
+}
+
+.social-list i,
+.sedes-list i {
+    font-size: 1.3rem;
+    width: 22px;
+    text-align: center;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .contact-card {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #000;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* ICONOS EN CÍRCULO */
+.icon-circle {
+    width: 38px;
+    height: 38px;
+    background: #e63946;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .25s ease, background .25s;
+}
+
+.social-list a:hover .icon-circle,
+.sedes-list a:hover .icon-circle {
+    background: #222;
+    transform: scale(1.15);
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #e63946;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    z-index: 3000;
+    transition: transform 0.25s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.15);
+}
+
+/* -------------------------
+   HERO HÍBRIDO PROFESIONAL
+----------------------------*/
+.hero-hybrid {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 6%;
+}
+
+/* Fondo con parallax suave */
+.hero-bg {
+    background: url('../img/fondo-nosotros.png') center/cover no-repeat;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Overlay moderno */
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.5)
+    );
+}
+
+/* Contenido */
+.hero-container {
+    position: relative;
+    color: #fff;
+    max-width: 900px;
+    z-index: 5;
+}
+
+.hero-title {
+    font-size: 3.1rem;
+    font-weight: 900;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Bloques de texto */
+.hero-text-blocks {
+    display: grid;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+/* CTA */
+.btn-cta {
+    background: #e63946;
+    color: white;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: #c71d2b;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .hero-hybrid {
+        padding: 0 10%;
+    }
+
+    .hero-text-blocks {
+        gap: 15px;
+    }
+}
